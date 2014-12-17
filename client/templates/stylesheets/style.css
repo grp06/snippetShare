@@ -1,0 +1,136 @@
+/* CSS declarations go here */
+
+*
+{
+    font-family: 'Open Sans', sans-serif;
+
+    list-style: none;
+    box-sizing: border-box;
+    text-decoration: none;
+    margin: 0;
+
+
+}
+body{
+		background: #f0f0f0;
+
+}
+
+h1, h2, h3{
+text-align: center;
+}
+a:hover{
+    text-decoration: none;
+}
+input{
+text-align: center;
+}
+
+
+.inputControl{
+	width: 100%;
+	margin-bottom: 10px;
+	font-size: 20px;
+}
+
+.tagBox{
+
+
+}
+
+.todoInput{
+width: 100%;
+background: black;
+}
+
+.tagList{
+text-align: center;
+	font-size: 20px;
+
+}
+
+
+.delete{
+float:right;
+margin-right: -15%;
+}
+
+.ui.animated.list{
+	text-align: center;
+	font-size: 20px
+}
+
+.tagsTitle{
+	font-size: 25px;
+	text-align: center;
+}
+
+
+.todoItem{
+margin: 0px 0px 15px 0px;
+font-size: 24px;
+padding: 10px 0px 10px 20px;
+background: white;
+box-shadow: 1px 1px 1px #535454;
+border-radius: 2px;
+}
+.snippetBox{
+margin: 0px 0px 10px 0px;
+font-size: 24px;
+padding: 10px;
+background: white;
+	box-shadow: 1px 1px 1px #535454;
+
+	
+	border-radius: 2px;
+}
+.selectedTodo{
+
+}
+
+.selectedSnippet{
+}
+.deleteTodo{
+float: right;
+}
+.listFormat{
+	text-align: center;
+	background: white;
+	box-shadow: 1px 1px 1px #535454;
+}
+.listFormat a{
+	font-size: 35px;
+}
+.fun{
+	font-size: 35px;
+}
+.itemBg{
+	background: white;
+}
+.hardFloat{
+float: right;
+}
+
+.snippetTagFormat{
+	font-size: 20px;
+	padding: 5px;
+
+}
+
+.snippetTagBg{
+	background: #fff;
+}
+
+
+
+
+.mode{
+	background: white;
+}
+
+
+
+
+
+
+

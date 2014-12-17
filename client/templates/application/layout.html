@@ -1,0 +1,36 @@
+<template name="layout">
+<head>
+	<title>Snippet Share</title>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'></head>
+	<div class="ui grid">
+
+		<div class="sixteen wide column">
+			<div class="listFormat">
+				<div class="ui horizontal list">
+					<div class="item active">
+						<a href="{{pathFor "snippets"}}">Snippets</a>
+					</div>
+					<div class="item">
+						<span class="fun">|</span>
+					</div>
+					<div class="item">
+						<a href="{{pathFor "todos"}}">To-Do's</a>
+					</div>
+					<div class="item">
+						<span class="fun">|</span>
+					</div>
+					<div class="item">
+						<a href="{{pathFor "insertBookForm"}}">IBF</a>
+					</div>				
+					
+				</div>
+			</div>
+		</div>
+
+		<div class="two wide column">{{>loginButtons }}</div>
+		<div class="twelve wide column">
+			{{>yield}}
+		</div>
+		<div class="two wide column"></div>
+	</div>
+</template>

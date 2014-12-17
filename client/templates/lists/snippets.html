@@ -1,0 +1,51 @@
+<template name="snippets">
+
+	<div class="ui grid">
+
+		
+
+
+
+
+
+	<div class="three wide column">
+			<div class="tagsTitle"> Tags</div>
+			{{#each returnTags}}
+			
+			<div class="tagList">
+				<a href="#">{{this}}</a>
+
+			</div>
+			{{/each}}
+		</div>
+		<div class="thirteen wide column">
+				{{#each returnSnippets}}
+				<div class="snippetBox {{highlightedItem}}">
+					{{snippetContent}}
+						{{#if showDeleteButton}}
+						{{>delete}}
+						{{/if}}
+				</div>
+				{{/each}}
+		</div>
+	</div>
+</template>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

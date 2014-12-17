@@ -1,0 +1,88 @@
+<template name="todos">
+	<div class="ui grid">
+		<!--Row Number One -->
+		<div class="four wide column">
+			<div class="tagBox">
+
+				<div class="ui labeled input">
+
+					<div class="ui label">Tag:</div>
+
+					<input type="text" class="enterTag" placeholder="enter a tag" />
+				</div>
+			</div>
+		</div>
+
+	<div class="twelve wide column">
+		<div class="ui input inputControl">
+			<input type="text" class="enterTodo" placeholder="enter a to-do item" />
+		</div>
+	</div>
+
+</div>
+
+<div class="ui grid">
+		
+<div class="four wide column">
+
+		{{#each returnTags}}
+		<div class="tagList">
+			<div class="ui animated list">
+				<div class="item">
+					<div class="content">
+						<div class="header">
+							<a href="#">{{this}}</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		{{/each}}
+
+
+	</div>
+
+	<div class="twelve wide column"> 
+ 
+
+
+
+			
+
+			{{#each returnTodos}}
+			<div class="ten wide column todoItem {{highlightedItem}}">
+				
+				<p>{{snippetContent}}</p>
+				
+			</div>
+
+				<div class="six wide column del">
+					{{#if showDeleteTodo}}
+					{{>delete}}
+					{{/if}}
+				</div>
+
+			{{/each}}
+
+		</div>
+		<!--Row Number Two -->
+
+		<!--Row Number Three -->
+	</div>
+</template>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
